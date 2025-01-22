@@ -5,49 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Project</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #updates {
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  #updates li {
+    margin: 5px 0;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+  }
+
+  .gallery video, .gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
 </head>
 <body>
 <h1>Welcome to My Project Website</h1>
 <p>This website documents my project progress.</p>
 <h2>Updates</h2>
 <ul id="updates">
-<li>Week 1: Initial setup completed!</li>
+  <li>Week 1: Initial setup completed!</li>
 </ul>
-<img src="scrn1.jpg" alt="Project Diagram" width="300">
-<img src="scrn2.jpg" alt="Project Diagram" width="300">
-<img src="scrn3.jpg" alt="Project Diagram" width="300">
-<img src="scrn4.jpg" alt="Project Diagram" width="300">
-<video controls>
-<source src="assignment lab2.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="RTC.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="bluetooth low energy.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="build in imu and microphone.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="buzzer.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="final details.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="microsdcard.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<video controls>
-<source src="oled display.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+
+<h2>Project Images and Videos</h2>
+<div class="gallery">
+  <img src="scrn1.jpg" alt="Project Diagram">
+  <img src="scrn2.jpg" alt="Project Diagram">
+  <img src="scrn3.jpg" alt="Project Diagram">
+  <img src="scrn4.jpg" alt="Project Diagram">
+  <video controls>
+    <source src="assignment lab2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="RTC.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="bluetooth low energy.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="build in imu and microphone.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="buzzer.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="final details.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="microsdcard.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls>
+    <source src="oled display.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 </body>
 </html>
